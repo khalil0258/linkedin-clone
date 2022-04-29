@@ -1,0 +1,88 @@
+.navigation {
+  padding: 0 8rem;
+  /* background-color: red; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer img {
+  height: 100px;
+  width: 100px;
+  transform: scale(1.4);
+  object-fit: contain;
+  /* background-color: black; */
+  cursor: pointer;
+}
+
+.leftHeader {
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscription {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid gray;
+  margin-left: 1rem;
+}
+.subscription a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-inline: 1rem;
+  transition: 0.3s all ease-in-out;
+  text-align: center;
+  padding: 10px;
+}
+.subscription a:hover {
+  background-color: rgb(212, 212, 212);
+  border-radius: 5px;
+}
+
+.subscription button {
+  cursor: pointer;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: 2px solid rgb(27, 112, 198);
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(27, 112, 198);
+  font-size: 15px;
+  font-weight: 550;
+  transition: 0.2s ease;
+}
+.subscription button:hover {
+  background-color: rgba(27, 112, 198, 0.044);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 0 2rem;
+    /* background-color: red; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgContainer img {
+    height: 70px;
+    width: 70px;
+    transform: scale(1.1);
+  }
+
+  .subscription {
+    margin-left: 0.5rem;
+  }
+  .leftHeader {
+    margin-top: 1.4rem;
+  }
+  .subscription button {
+    padding: 8px 20px;
+
+    font-size: 13px;
+  }
+}

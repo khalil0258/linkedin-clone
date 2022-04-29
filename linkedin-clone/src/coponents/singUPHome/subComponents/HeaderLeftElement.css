@@ -1,0 +1,41 @@
+.headerElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1.2rem;
+  color: gray;
+  opacity: 0.8;
+  transition: 0.2s all ease;
+  /* height: 2rem; */
+}
+.headerElement:hover {
+  opacity: 1;
+  color: black;
+}
+
+img {
+  margin-bottom: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+h5 {
+  font-weight: 200;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    margin-bottom: 10px;
+    height: 18px;
+    width: 18px;
+  }
+  .headerElement {
+    margin-left: 0.5rem;
+    color: gray;
+
+    /* height: 2rem; */
+  }
+}
