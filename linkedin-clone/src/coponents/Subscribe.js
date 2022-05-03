@@ -1,6 +1,8 @@
+import { signInWithPopup } from "firebase/auth";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logoImg.svg";
+import { auth, provider } from "../Firebase";
 import "./subscribe.css";
 function Subscribe() {
   const navigate = useNavigate();
@@ -9,6 +11,15 @@ function Subscribe() {
   };
   const inscrire = () => {
     console.log("clicked!!");
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // navigate("/HOME");
+        // console.log(result);
+        // console.log(result.user.displayName);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
   return (
     <div className="subContainer">
