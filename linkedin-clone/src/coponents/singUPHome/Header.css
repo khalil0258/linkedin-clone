@@ -1,6 +1,6 @@
 .navigation {
   padding: 0 8rem;
-  /* background-color: red; */
+
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,7 @@
   height: 100px;
   width: 100px;
   transform: scale(1.4);
+
   object-fit: contain;
   /* background-color: black; */
   cursor: pointer;

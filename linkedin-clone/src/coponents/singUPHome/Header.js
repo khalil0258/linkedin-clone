@@ -7,6 +7,7 @@ import bagImg from "../../assets/bagImg.svg";
 import peopleImg from "../../assets/peopleImg.svg";
 import journalImg from "../../assets/journalImg.svg";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -23,7 +24,9 @@ function Header() {
         <HeaderLeftElement img={bagImg} text="Offre d emploie" />
 
         <div className="subscription">
-          <a href="">Sinscrire</a>
+          <Link to="/subscription">
+            <a href="">Sinscrire</a>
+          </Link>
           <button>S identifier</button>
         </div>
       </div>

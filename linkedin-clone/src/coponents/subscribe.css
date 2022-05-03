@@ -1,0 +1,31 @@
+.subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.subContainer .subItem img {
+  transform: scale(6);
+}
+
+.subContainer .subItem p {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+button {
+  cursor: pointer;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: 2px solid rgb(27, 112, 198);
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(27, 112, 198);
+  font-size: 15px;
+  font-weight: 550;
+  transition: 0.2s ease;
+}
+button:hover {
+  background-color: rgba(27, 112, 198, 0.044);
+}

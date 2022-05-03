@@ -1,0 +1,152 @@
+/* .container{
+
+} */
+
+.trouverTravail {
+  display: flex;
+  /* align-items: center; */
+  padding: 2.5rem 5rem;
+  background-color: rgb(243, 242, 240);
+}
+.leftSection {
+  flex: 0.5;
+  padding-top: 2rem;
+}
+.leftSection p {
+  color: rgb(39, 39, 39);
+  font-size: 45px;
+  line-height: 1.3;
+  font-weight: lighter;
+  margin-right: 4rem;
+}
+
+.rightSection {
+  flex: 0.5;
+  padding-top: 0.5rem;
+}
+
+.rightSection p {
+  font-size: 19px;
+  color: rgb(97, 97, 96);
+  margin-bottom: 1rem;
+}
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.linksContainer a {
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 5px 7px 5px 0;
+  border-radius: 30px;
+  padding: 18px;
+  background-color: rgb(224, 223, 221);
+}
+
+.linksContainer a:hover {
+  text-decoration: underline;
+  background-color: rgb(179, 179, 179);
+}
+
+.rightSection h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  padding: 7px;
+  /* background-color: red; */
+  color: gray;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.rightSection h4 img {
+  /* background-color: black; */
+  transform: translateY(40%);
+}
+
+.rightSection h4:hover {
+  background-color: rgb(179, 179, 179);
+}
+
+/* publier votre offre d emploie  */
+.publierVotreOffre {
+  padding: 2rem 5rem;
+  background-color: rgb(241, 236, 229);
+  display: flex;
+}
+.publierVotreOffre .leftSection {
+  /* color: rgb(178, 64, 32); */
+  flex: 0.4;
+  padding-block: 3rem;
+}
+.publierVotreOffre .leftSection p {
+  color: rgb(178, 64, 32);
+  margin-right: 2rem;
+  font-weight: 100;
+  font-size: 42px;
+}
+
+.publierVotreOffre .rightSection {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.publierVotreOffre .rightSection button {
+  padding: 12px 17px;
+  border: 1px solid rgb(40, 40, 40);
+  background-color: transparent;
+  font-size: 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: rgb(102, 101, 101);
+  transition: 0.3s ease-in-out;
+}
+
+.publierVotreOffre .rightSection button:hover {
+  color: rgb(86, 86, 86);
+  text-decoration: underline;
+  background-color: rgb(214, 212, 212);
+}
+
+@media (max-width: 992px) {
+  .trouverTravail {
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+  }
+  /* .leftSection {
+      flex: 0.5;
+      padding-top: 2rem;
+    } */
+  .leftSection p {
+    font-size: 35px;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  /* ============== */
+
+  /* publier votre offre d emploie  */
+  .publierVotreOffre {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .publierVotreOffre .leftSection {
+    /* color: rgb(178, 64, 32); */
+    flex: 0.5;
+    padding-block: 0;
+  }
+  .publierVotreOffre .leftSection p {
+    margin-right: 0;
+  }
+
+  .publierVotreOffre .rightSection {
+    flex: 0.5;
+    
+  }
+}

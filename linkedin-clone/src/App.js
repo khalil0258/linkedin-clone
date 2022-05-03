@@ -1,13 +1,18 @@
 import "./App.css";
-import Header from "./coponents/singUPHome/Header";
-import styled from "styled-components";
-import heroImg from "./assets/sectionHero1.svg";
+// import Header from "./coponents/singUPHome/Header";
+
+import Home from "./coponents/Home";
+import { Routes, Route } from "react-router-dom";
+
+import Subscribe from "./coponents/Subscribe";
 function App() {
-  console.log(process.env);
+  // console.log(process.env);
   return (
     <div className="app">
-      <Header />
- 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/subscription" element={<Subscribe />} />
+      </Routes>
     </div>
   );
 }
