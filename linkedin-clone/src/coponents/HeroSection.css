@@ -9,7 +9,7 @@
 }
 .rightHeroSection p {
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 50;
   color: rgb(145, 91, 76);
 }
 .rightHeroSection .buttons {
@@ -51,7 +51,7 @@ h3 {
 
 @media (max-width: 992px) {
   .heroSection {
-    padding: 2rem;
+    padding: 2rem 2rem;
     flex-direction: column;
   }
 
@@ -62,7 +62,7 @@ h3 {
   .rightHeroSection .buttons {
     padding-top: 3rem;
 
-    width: 80%;
+    width: 70%;
   }
 
   .rightHeroSection .buttons {

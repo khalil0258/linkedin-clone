@@ -1,0 +1,14 @@
+.cont {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem 8rem;
+  background-color: rgb(243, 242, 239);
+  width: 100vw;
+}
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}

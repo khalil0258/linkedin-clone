@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import logoImg from "../../assets/logoImg.svg";
 import HeaderLeftElement from "./subComponents/HeaderLeftElement";
 import compassImg from "../../assets/compass.svg";
@@ -18,7 +18,7 @@ function Header() {
       </div>
       {/* left header */}
       <div className="leftHeader">
-        <HeaderLeftElement img={compassImg} text="compass" />
+        <HeaderLeftElement img={compassImg} text="Navigate" />
         <HeaderLeftElement img={peopleImg} text="Personnes" />
         <HeaderLeftElement img={journalImg} text="Linkedin Learning" />
         <HeaderLeftElement img={bagImg} text="Offre d emploie" />

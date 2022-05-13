@@ -2,16 +2,9 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAwAzYuL9KMNHneKEMtVpgzGHfwSsV9Uu8",
-  authDomain: "linkedin-clone-b7b13.firebaseapp.com",
-  projectId: "linkedin-clone-b7b13",
-  storageBucket: "linkedin-clone-b7b13.appspot.com",
-  messagingSenderId: "255639491308",
-  appId: "1:255639491308:web:c2742aff9812c3b6ec4bc9",
-};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -20,4 +13,6 @@ const auth = getAuth();
 
 const provider = new GoogleAuthProvider();
 
-export { app, auth, provider };
+const db = getFirestore();
+
+export { app, auth, provider, db };

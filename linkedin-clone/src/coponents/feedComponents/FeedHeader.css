@@ -1,0 +1,71 @@
+.HeaderContainer {
+  padding: 0.4rem 8rem;
+  /* border-bottom: 0.4px solid rgb(36, 36, 36); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0px 3px rgb(123, 123, 123);
+}
+
+.leftHeader {
+  display: flex;
+  align-items: center;
+}
+.leftHeader .LinkedIcon {
+  color: rgb(10, 102, 194);
+  transform: scale(1.7);
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+.leftHeader .inputHolder {
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(238, 243, 248);
+  width: 15rem;
+}
+.leftHeader .inputHolder .searchIcon {
+  color: gray;
+
+  transform: translateX(3px) translateY(3px) scale(0.8);
+}
+/* .leftHeader .inputHolder .MuiSvgIcon {
+  transform: scale(0.7);
+  background-color: red;
+} */
+.leftHeader .inputHolder input {
+  width: 13rem;
+  padding: 8px 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+/* .leftHeader input::placeholder {
+  font-weight: 100;
+} */
+
+.RightHeader {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .HeaderContainer {
+    padding: 0.4rem 2rem;
+  }
+
+  /* .leftHeader {
+    display: flex;
+    align-items: center;
+  } */
+  .leftHeader .LinkedIcon {
+    transform: translateY(-1rem) scale(1.7);
+  }
+  .leftHeader .inputHolder {
+    display: none;
+  }
+
+  .RightHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

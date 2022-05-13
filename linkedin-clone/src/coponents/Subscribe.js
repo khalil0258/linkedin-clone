@@ -13,7 +13,7 @@ function Subscribe() {
     console.log("clicked!!");
     signInWithPopup(auth, provider)
       .then((result) => {
-        // navigate("/HOME");
+        navigate("/feed");
         // console.log(result);
         // console.log(result.user.displayName);
       })

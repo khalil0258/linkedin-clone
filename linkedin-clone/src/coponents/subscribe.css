@@ -5,6 +5,11 @@
   height: 100vh;
   text-align: center;
 }
+.subContainer .subItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .subContainer .subItem img {
   transform: scale(6);
 }
