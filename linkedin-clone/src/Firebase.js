@@ -6,6 +6,8 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 
+// first ,u must put your firebase key here the everything will work!!!
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
